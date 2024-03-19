@@ -1,0 +1,46 @@
+[{
+  "id": "a67bb56c-70d3-4755-a2c1-02d7ef0905a5",
+  "email": "email@prova.com",
+  "products": {
+    "id_prodotto1": 5,
+    "id_prodotto2": 2
+  },
+  "total": 123.21,
+  "payment_info": {
+    "json": "dati"
+  }
+},
+{
+  "id": "86af2bc8-c233-4428-8ce4-cdf883027f63",
+  "email": "email@prova.com",
+  "products": {
+    "id_prodotto1": 2,
+    "id_prodotto2": 1
+  },
+  "total": 1231.21,
+  "payment_info": {
+    "json": "dati"
+  }
+},
+{
+  "id": "2ce5e113-6766-42e7-896c-b248be394387",
+  "email": "email@prova.com",
+  "products": {
+    "id_prodotto1": 1
+  },
+  "total": 1.21,
+  "payment_info": {
+    "json": "dati"
+  }
+},
+{
+  "id": "32d03eca-58b2-4232-8747-a451cddae6ec",
+  "email": "email@prova.com",
+  "products": {
+    "id_prodotto3": 3
+  },
+  "total": 10.21,
+  "payment_info": {
+    "json": "dati"
+  }
+}]

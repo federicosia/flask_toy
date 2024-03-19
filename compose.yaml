@@ -1,0 +1,16 @@
+services:
+  flask-app:
+    image: flask-app
+    build:
+      dockerfile: Dockerfile
+    environment:
+      - IP_ADDRESS_FLASK=0.0.0.0
+      - IP_ADDRESS_DB=mongodb
+    depends_on:
+      - mongodb
+    ports:
+      - 5000:5000
+  mongodb:
+    image: mongo:7.0.2
+    ports:
+      - 27017:27017

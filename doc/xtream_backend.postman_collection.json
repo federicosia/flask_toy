@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "4e1d9e0d-266e-4fbe-b2a7-fcde5aa53e6c",
+		"name": "xtream_backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14450318"
+	},
+	"item": [
+		{
+			"name": "get products by page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/products",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get products by category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/category?type=verdura",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"category"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "verdura"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get categories with products num",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/categories",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search for article",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/search?article=me&page=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "article",
+							"value": "me"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get documentation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/openapi/swagger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"openapi",
+						"swagger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"total\": 123.54,\r\n    \"payment_info\": {\r\n        \"json\": \"dati\"\r\n    },\r\n    \"email\": \"mariorossi@gmail.com\",\r\n    \"products\": [\r\n        {\r\n            \"id\": \"2\",\r\n            \"category\": \"verdura\",\r\n            \"name\": \"broccoli\",\r\n            \"price\": 2.5,\r\n            \"quantity\": 22,\r\n            \"discount_multiplier\": 1\r\n        },\r\n        {\r\n            \"id\": \"1\",\r\n            \"category\": \"carne\",\r\n            \"name\": \"salsiccia di suino\",\r\n            \"price\": 25.7,\r\n            \"quantity\": 15,\r\n            \"discount_multiplier\": 3\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
